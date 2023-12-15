@@ -14,7 +14,7 @@ class Product(models.Model):
     date_of_last_change = models.DateTimeField(auto_now_add=True, verbose_name='Дата последнего изменения')
 
     def __str__(self):
-        return f'{self.name} ({self.category}) - {self.price_for_one}/шт.'
+        return f'{self.name} ({self.category}) - {self.price_for_one}'
 
     class Meta:
         verbose_name = 'продукт'
